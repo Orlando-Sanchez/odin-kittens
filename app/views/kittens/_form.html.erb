@@ -1,0 +1,17 @@
+<%= form_for(@kitten, url: yield(:form_path)) do |f| %> 
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :cuteness %>
+  <%= f.text_field :cuteness %>
+
+  <%= f.label :softness %>
+  <%= f.text_field :softness %>
+
+  <%= f.submit "Submit" %>
+<% end %>

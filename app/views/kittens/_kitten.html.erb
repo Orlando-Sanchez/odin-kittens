@@ -1,0 +1,7 @@
+<li>
+  <%= link_to kitten.name, kitten %>
+  <% if kitten %>
+    | <%= link_to "delete", kitten, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+  <% end %>
+</li>

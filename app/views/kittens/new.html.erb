@@ -1,0 +1,8 @@
+<% provide(:form_path, kittens_path) %>
+<% provide(:title, 'New kitten') %>
+<h1>Create a kitten</h1>
+<div>
+  <div>
+    <%= render 'form', object: @kitten %>
+  </div>
+</div>
